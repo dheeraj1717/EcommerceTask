@@ -1,0 +1,43 @@
+.nav-button{
+    cursor: pointer;
+    position: relative;
+}
+.nav-button::after{
+    content: '';
+    display: block;
+    height:4px;
+    width: 100%;
+    background-color: #29435f;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+.nav-button:hover::after{
+    transform: scaleX(1);
+}
+.active-link {
+    color: blue; /* Set the desired color for the active link */
+    /* Add any other styles you want for the active link */
+  }
+  .active-link {
+    color: blue; /* Set the color for active links (Products & Services, About) */
+    /* Add any other styles you want for active links */
+  }
+  
+  .active-home {
+    color: blue; /* Set the color for the active "Home" link */
+    /* Add any other styles you want for the active "Home" link */
+  }
+  
+  /* Add any other styles you want for the links, e.g., the default color */
+  .nav-button a {
+    color: black; /* Set the default color for the links */
+    /* Add any other styles for the links */
+  }
+  
+  /* Add focus styles for the links */
+  .nav-button a:focus {
+    outline: none; /* Remove the default focus outline */
+    /* Add any other focus styles you want */
+  }
+  
